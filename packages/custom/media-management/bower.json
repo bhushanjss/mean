@@ -1,5 +1,8 @@
 {
   "name": "media-management",
   "version": "0.0.1",
-  "dependencies": {}
+  "dependencies": {
+    "ng-file-upload": "~11.1.1",
+    "cloudinary_ng": "~0.2.0"
+  }
 }
