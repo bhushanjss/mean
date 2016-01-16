@@ -18,14 +18,14 @@ FaconApp.register(function(app, auth, database) {
 
   //We are adding a link to the main menu for all authenticated users
   FaconApp.menus.add({
-    title: 'faconApp example page',
-    link: 'faconApp example page',
+    title: 'faconApp',
+    link: 'faconApp',
     roles: ['authenticated'],
     menu: 'main'
   });
   
   FaconApp.aggregateAsset('css', 'faconApp.css');
-
+  
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above
     // Save settings with callback

@@ -1,9 +1,9 @@
 {
   "name": "facon-app",
   "version": "0.0.1",
-  "description": "Some description of facon-app",
+  "description": "The web app for Facon Network",
   "author": {
-    "name": "mean scaffold"
+    "name": "Vidya"
   },
   "mean": "0.5.5",
   "engines": {
