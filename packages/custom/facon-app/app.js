@@ -18,7 +18,7 @@ FaconApp.register(function(app, auth, database) {
 
   //We are adding a link to the main menu for all authenticated users
   FaconApp.menus.add({
-    title: 'faconApp',
+    title: 'Facon App',
     link: 'faconApp example page',
     roles: ['authenticated'],
     menu: 'main'
