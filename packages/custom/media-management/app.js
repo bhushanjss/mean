@@ -30,6 +30,8 @@ MediaManagement.register(function(app, auth, database) {
   MediaManagement.aggregateAsset('js', '../lib/ng-file-upload/ng-file-upload-shim.js');
   MediaManagement.aggregateAsset('js', '../lib/cloudinary_ng/js/angular.cloudinary.js');
   MediaManagement.aggregateAsset('js', '../lib/ng-file-upload/ng-file-upload.js');
+
+  MediaManagement.angularDependencies(['cloudinary']);
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above
     // Save settings with callback
