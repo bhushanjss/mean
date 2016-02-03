@@ -25,7 +25,11 @@ MediaManagement.register(function(app, auth, database) {
   });
   
   MediaManagement.aggregateAsset('css', 'mediaManagement.css');
-
+  MediaManagement.aggregateAsset('js', '../lib/lodash/lodash.js',{global:false, weight: -5});
+  MediaManagement.aggregateAsset('js', '../lib/cloudinary-core/cloudinary-core.js',{global:false, weight: -4});
+  MediaManagement.aggregateAsset('js', '../lib/ng-file-upload/ng-file-upload-shim.js');
+  MediaManagement.aggregateAsset('js', '../lib/cloudinary_ng/js/angular.cloudinary.js');
+  MediaManagement.aggregateAsset('js', '../lib/ng-file-upload/ng-file-upload.js');
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above
     // Save settings with callback
