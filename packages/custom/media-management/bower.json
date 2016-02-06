@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "cloudinary_ng": "~0.2.0",
-    "ng-file-upload": "~11.2.3"
+    "ng-file-upload": "~11.2.3",
+    "angular-animate": "~1.4.9",
+    "angular-resource": "~1.4.9"
   }
 }
