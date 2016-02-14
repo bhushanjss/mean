@@ -13,6 +13,7 @@ var mean = require('meanio'),
   modRewrite = require('connect-modrewrite'),
   // seo = require('mean-seo'),
   config = mean.loadConfig(),
+  cors = require('cors'),
   bodyParser = require('body-parser');
 
 module.exports = function(app, db) {
@@ -61,5 +62,13 @@ module.exports = function(app, db) {
 
   ]));
 
+  var corsOptions = {
+  "origin" : "*",
+  "allowedHeaders" : ['Content-Type', 'Accept'],
+   "preflightContinue": false
+};
+
+  app.use(cors(corsOptions));
+  app.options('*', cors(corsOptions)); // include before other routes
   // app.use(seo());
 };
