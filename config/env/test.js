@@ -13,13 +13,13 @@ module.exports = {
     format: 'common'
   },
   app: {
-    name: 'MEAN - A Modern Stack - Test'
+    name: 'FaconNet App - Test'
   },
   strategies: {
     local: {
       enabled: true
     },
-    landingPage: '/',
+    landingPage: '/auth/login',
     facebook: {
       clientID: 'APP_ID',
       clientSecret: 'APP_SECRET',
