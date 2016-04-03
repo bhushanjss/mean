@@ -42,13 +42,13 @@ module.exports = {
       clientID: 'APP_ID',
       clientSecret: 'APP_SECRET',
       callbackURL: 'http://localhost:3000/api/auth/facebook/callback',
-      enabled: false
+      enabled: true
     },
     twitter: {
       clientID: 'CONSUMER_KEY',
       clientSecret: 'CONSUMER_SECRET',
       callbackURL: 'http://localhost:3000/api/auth/twitter/callback',
-      enabled: false
+      enabled: true
     },
     github: {
       clientID: 'APP_ID',
