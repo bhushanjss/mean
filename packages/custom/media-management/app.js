@@ -15,14 +15,6 @@ MediaManagement.register(function(app, auth, database) {
 
   //We enable routing. By default the Package Object is passed to the routes
   MediaManagement.routes(app, auth, database);
-
-  //We are adding a link to the main menu for all authenticated users
-  MediaManagement.menus.add({
-    title: 'Media Management',
-    link: 'mediaManagement example page',
-    roles: ['authenticated'],
-    menu: 'main'
-  });
   
   MediaManagement.aggregateAsset('css', 'mediaManagement.css');
   MediaManagement.aggregateAsset('js', '../lib/lodash/lodash.js',{global:false, weight: -5});

@@ -2,8 +2,8 @@
 
 angular.module('mean.media-management').config(['$stateProvider',
   function($stateProvider) {
-    $stateProvider.state('mediaManagement example page', {
-      url: '/mediaManagement/example',
+    $stateProvider.state('mediaManagement', {
+      url: '/mediaManagement',
       templateUrl: 'media-management/views/index.html'
     });    
   }

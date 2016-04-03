@@ -15,14 +15,6 @@ FaconApp.register(function(app, auth, database) {
 
   //We enable routing. By default the Package Object is passed to the routes
   FaconApp.routes(app, auth, database);
-
-  //We are adding a link to the main menu for all authenticated users
-  FaconApp.menus.add({
-    title: 'Facon App',
-    link: 'faconApp example page',
-    roles: ['authenticated'],
-    menu: 'main'
-  });
   
   FaconApp.aggregateAsset('css', 'faconApp.css');
 

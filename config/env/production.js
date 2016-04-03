@@ -37,7 +37,7 @@ module.exports = {
     local: {
       enabled: true
     },
-    landingPage: '/',
+    landingPage: '/faconApp',
     facebook: {
       clientID: 'APP_ID',
       clientSecret: 'APP_SECRET',

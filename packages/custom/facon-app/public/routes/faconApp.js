@@ -2,8 +2,8 @@
 
 angular.module('mean.facon-app').config(['$stateProvider',
   function($stateProvider) {
-    $stateProvider.state('faconApp example page', {
-      url: '/faconApp/example',
+    $stateProvider.state('faconApp', {
+      url: '/faconApp',
       templateUrl: 'facon-app/views/index.html'
     });
   }
