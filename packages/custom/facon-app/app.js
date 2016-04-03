@@ -18,6 +18,8 @@ FaconApp.register(function(app, auth, database) {
   
   FaconApp.aggregateAsset('css', 'faconApp.css');
 
+  FaconApp.aggregateAsset('js', '../lib/jQuery/dist/jQuery.js',{global:false, weight: -5});
+  FaconApp.aggregateAsset('js', '../lib/spritespin/release/spritespin.js',{global:false, weight: -4});
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above
     // Save settings with callback
