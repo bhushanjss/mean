@@ -7,10 +7,15 @@ angular.module('mean.media-management').controller('MediaManagementController', 
     $scope.package = {
       name: 'media-management'
     };
-    var d = new Date();
-    $scope.title = "Image (" + d.getDate() + " - " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + ")";
+    var userId = 1;
     //$scope.$watch('files', function() {
-    $scope.uploadFiles = function(files){
+    $scope.uploadFiles = function(files)
+    {
+    var d = new Date();    
+    var dateId = d.getDate() + "-" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    var folderId = userId + "/" + dateId;
+    var tagId = userId+"-"+dateId;
+    $scope.title = "Image-" + dateId + ")";
       $scope.files = files;
       if (!$scope.files) return;
       angular.forEach(files, function(file){
@@ -19,8 +24,9 @@ angular.module('mean.media-management').controller('MediaManagementController', 
             url: "https://api.cloudinary.com/v1_1/" + cloudinary.config().cloud_name + "/upload",
             data: {
               upload_preset: cloudinary.config().upload_preset,
-              tags: 'myphotoalbum',
+              tags: tagId,
               context: 'photo=' + $scope.title,
+              folder : folderId,
               file: file
             }
           }).progress(function (e) {

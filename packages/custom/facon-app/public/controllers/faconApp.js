@@ -18,9 +18,9 @@ angular.module('mean.facon-app').controller('FaconAppController', ['$scope', 'Gl
 
 	spin.spritespin({
     	source: frames,
-    	width: 480,
+    	width: 320,
     	sense: -1,
-    	height: 327
+    	height: 200
 	});
 	api = spin.spritespin("api");
 	
