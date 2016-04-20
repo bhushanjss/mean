@@ -69,6 +69,6 @@ module.exports = function(app, db) {
 };
 
   app.use(cors(corsOptions));
-  app.options('*', cors(corsOptions)); // include before other routes
+  //app.options('*', cors(corsOptions)); // include before other routes
   // app.use(seo());
 };

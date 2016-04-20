@@ -61,5 +61,9 @@ angular.module('mean.media-management').controller('MediaManagementController', 
       }
       return hasFile ? "dragover" : "dragover-err";
     };
+
+    MediaManagement.photos({}, function (v) {
+        $scope.photos = v.resources;
+    });
   }
 ]);
